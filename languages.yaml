@@ -1,0 +1,4 @@
+en:
+  PLUGIN_ICALENDAR:
+    NUMEVENTS: Text Variable
+    NUMEVENTS_HELP: Text to add to the top of a page

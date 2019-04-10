@@ -1,0 +1,5 @@
+enabled: true
+#icsfile is relative to user/data/calendars !
+icsfile: example.ics
+numevents: 2
+
