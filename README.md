@@ -49,8 +49,14 @@ Note that if you use the admin plugin, a file with your configuration, and named
 
 ## Usage
 
-Once installed and enabled, you can use this Plugin to parse an ICS Calendar File (must be found in user/data/calendars and added to user/config/plugins/icalendar.yaml) and display Events from that Calendar anywhere on your Site using {{ eventlist() }} in the appropriate template (or page, if twig processing is enabled).
-You can use <ul></ul> or <ol></ol> around the shortcut to get the desired List Type.
+Once installed and enabled, you can use this Plugin to parse an ICS Calendar File (must be found in user/data/calendars and added to user/config/plugins/icalendar.yaml) and display Events from that Calendar anywhere on your Site using 
+	{{ eventlist() }} 
+in the appropriate template (or page, if twig processing is enabled).
+You can use 
+	<ul></ul> 
+or 
+	<ol></ol> 
+around the shortcut to get the desired List Type.
 Additionally, you can specify a maximum Numer of Events to be incorporated in the List, just use numevents: XX in config File.
 
 ## Credits
