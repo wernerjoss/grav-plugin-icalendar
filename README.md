@@ -21,7 +21,7 @@ To install this plugin, just download the zip version of this repository and unz
 You should now have all the plugin files under
 
     /your/site/grav/user/plugins/icalendar
-	
+    
 > NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Error](https://github.com/getgrav/grav-plugin-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) to operate.
 
 In Addition, it requires [om/icalparser](https://github.com/OzzyCzech/icalparser) to be installed in same Directory.
@@ -40,8 +40,8 @@ Here is the default configuration and an explanation of available options:
 ```yaml
 
 enabled: true
-icsfile: example.ics	# your ics Calendar File (in user/data/calendars)
-numevents: 2	# max, No. of Events in List
+icsfile: example.ics    # your ics Calendar File (in user/data/calendars)
+numevents: 2    # max, No. of Events in List
 
 ```
 
@@ -50,12 +50,12 @@ Note that if you use the admin plugin, a file with your configuration, and named
 ## Usage
 
 Once installed and enabled, you can use this Plugin to parse an ICS Calendar File (must be found in user/data/calendars and added to user/config/plugins/icalendar.yaml) and display Events from that Calendar anywhere on your Site using 
-	{{ eventlist() }} 
+    {{ eventlist() }} 
 in the appropriate template (or page, if twig processing is enabled).
 You can use 
-	<ul></ul> 
+    <ul></ul> 
 or 
-	<ol></ol> 
+    <ol></ol> 
 around the shortcut to get the desired List Type.
 Additionally, you can specify a maximum Numer of Events to be incorporated in the List, just use numevents: XX in config File.
 
