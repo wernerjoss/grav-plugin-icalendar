@@ -50,20 +50,28 @@ Note that if you use the admin plugin, a file with your configuration, and named
 ## Usage
 
 Once installed and enabled, you can use this Plugin to parse an ICS Calendar File (must be found in user/data/calendars and added to user/config/plugins/icalendar.yaml) and display Events from that Calendar anywhere on your Site using 
+
     {{ eventlist() }} 
+    
 in the appropriate template (or page, if twig processing is enabled).
-You can use 
-    <ul></ul> 
+You can use
+
+    <ul></ul>
+    
 or 
+
     <ol></ol> 
+    
 around the shortcut to get the desired List Type.
 Additionally, you can specify a maximum Numer of Events to be incorporated in the List, just use numevents: XX in config File.
+Note: The Events List will only show Events in the Future !
 
 ## Credits
 
-This Plugin requires and depends on [om/icalparser](https://github.com/OzzyCzech/icalparser) - Kudos to Roman :)
+This Plugin requires and depends on [om/icalparser](https://github.com/OzzyCzech/icalparser) - Kudos to Roman Ožana :)
 
 ## To Do
 
-- [ ] add Calendar Widget (not only Events List)
+- [ ] add Calendar Widget (not just Events List)
+- [ ] evtl. add Option to also show Events from teh Past
 
