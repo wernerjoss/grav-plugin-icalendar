@@ -38,6 +38,6 @@ form:
         type: file
         label: ICAL Calendar File
         multiple: false
-        destination: 'user/data/calendars''
+        destination: 'user/data/calendars'
         accept:
             - .ics
