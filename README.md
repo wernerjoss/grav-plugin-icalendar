@@ -25,7 +25,7 @@ You should now have all the plugin files under
 > NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Error](https://github.com/getgrav/grav-plugin-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) to operate.
 
 In Addition, it requires [om/icalparser](https://github.com/OzzyCzech/icalparser) to be installed in same Directory.
-To do that, just navigate to the Plugin directory and run 'composer install' from there !
+To do that, just open a shell, change to the Plugin directory and run 'composer install' from there !
 
 ### Admin Plugin
 
@@ -73,5 +73,5 @@ This Plugin requires and depends on [om/icalparser](https://github.com/OzzyCzech
 ## To Do
 
 - [ ] add Calendar Widget (not just Events List)
-- [ ] evtl. add Option to also show Events from teh Past
+- [ ] evtl. add Option to also show Events from the Past
 
