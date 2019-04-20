@@ -38,7 +38,7 @@ class EventListTwigExtension extends \Twig_Extension
 			// DONE: include URL !
 			if (((int) $r['DTSTART']->format('U')) > $today)	{
 				if (isset($r['URL']))
-					$eventList .= sprintf('	<li>%s - <a href="%s">%s</a></li>' . PHP_EOL, $r['DTSTART']->format('d.m.Y'), $r['URL'],$r['SUMMARY']);
+					$eventList .= sprintf('	<li>%s - <a href="%s" target="_blank">%s</a></li>' . PHP_EOL, $r['DTSTART']->format('d.m.Y'), $r['URL'],$r['SUMMARY']);
 				else
 					$eventList .= sprintf('	<li>%s - %s</li>' . PHP_EOL, $r['DTSTART']->format('d.m.Y'), $r['SUMMARY']);
 				$i++;

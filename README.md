@@ -24,8 +24,8 @@ You should now have all the plugin files under
     
 > NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Error](https://github.com/getgrav/grav-plugin-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) to operate.
 
-In Addition, it requires [om/icalparser](https://github.com/OzzyCzech/icalparser) to be installed in same Directory.
-To do that, just open a shell, change to the Plugin directory and run 'composer install' from there !
+In Addition, it requires [om/icalparser](https://github.com/OzzyCzech/icalparser) to be installed in same Directory,
+which is now incorporated - see also the Credits Section below on that.
 
 ### Admin Plugin
 
@@ -69,6 +69,7 @@ Note: The Events List will only show Events in the Future !
 ## Credits
 
 This Plugin requires and depends on [om/icalparser](https://github.com/OzzyCzech/icalparser) - Kudos to Roman Ožana :)
+- note that icalparser is already incorporated in a patched version which additionally contains 'URL' as a known Icalendar attribute !
 
 ## To Do
 
