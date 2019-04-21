@@ -1,6 +1,6 @@
 # Icalendar Plugin
 
-The **Icalendar** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Reads ICS Files and shows Events List on your Page(s)
+The **Icalendar** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It reads an ICS Calendar File and shows an Events List from that Calendar on your Page(s)
 
 ## Installation
 
@@ -40,8 +40,8 @@ Here is the default configuration and an explanation of available options:
 ```yaml
 
 enabled: true
-icsfile: example.ics    # your ics Calendar File (in user/data/calendars)
-numevents: 2    # max, No. of Events in List
+icsfile: example.ics    # your ics Calendar File (without Path, must be found in user/data/calendars)
+numevents: 2    # max, No. of Events to include in List
 
 ```
 
@@ -69,10 +69,11 @@ Note: The Events List will only show Events in the Future !
 ## Credits
 
 This Plugin requires and depends on [om/icalparser](https://github.com/OzzyCzech/icalparser) - Kudos to Roman Ožana :)
-- note that icalparser is already incorporated in a patched version which additionally contains 'URL' as a known Icalendar attribute !
+> note that icalparser is already incorporated in a patched version which additionally contains 'URL' as a known Icalendar attribute !
 
 ## To Do
 
 - [ ] add Calendar Widget (not just Events List)
+- [ ] evtl. process multiple Calendar (ICS) Files
 - [ ] evtl. add Option to also show Events from the Past
 
