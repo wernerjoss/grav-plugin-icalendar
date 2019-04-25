@@ -11,8 +11,8 @@ bugs: https://github.com/werner-hoernerfranzracing-de/grav-plugin-icalendar/issu
 docs: https://github.com/werner-hoernerfranzracing-de/grav-plugin-icalendar/blob/develop/README.md
 license: MIT
 
-dependencies:
-  - { name: om/icalparser }
+# dependencies:
+#   - { name: om/icalparser }
 
 form:
   validation: strict
