@@ -5,10 +5,10 @@ icon: plug
 author:
   name: Werner Joss
   email: werner@hoernerfranzracing.de
-homepage: https://github.com/werner-hoernerfranzracing-de/grav-plugin-icalendar
+homepage: https://github.com/wernerjoss/grav-plugin-icalendar
 keywords: grav, plugin, ICS, Icalendar
-bugs: https://github.com/werner-hoernerfranzracing-de/grav-plugin-icalendar/issues
-docs: https://github.com/werner-hoernerfranzracing-de/grav-plugin-icalendar/blob/develop/README.md
+bugs: https://github.com/wernerjoss/grav-plugin-icalendar/issues
+docs: https://github.com/wernerjoss/grav-plugin-icalendar/blob/master/README.md
 license: MIT
 
 dependencies:
