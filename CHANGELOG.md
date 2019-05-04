@@ -1,3 +1,9 @@
+# v0.2.1
+##  04/25/2019
+
+1. [](#bugfix)
+    * removed om\icalparser dependency from blueprints.yaml as patched version already included
+   
 # v0.2.0
 ##  04/20/2019
 
