@@ -1,3 +1,9 @@
+# v0.2.2
+##  05/04/2019
+
+1. [](#bugfix)
+    * fixed Links in blueprints.yaml, removed unused Subdirectorys from om\icalparser
+   
 # v0.2.1
 ##  04/25/2019
 
