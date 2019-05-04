@@ -1,5 +1,5 @@
 name: Icalendar
-version: 0.1.0
+version: 0.2.2
 description: Reads ICS Files and shows Events from it
 icon: plug
 author:
@@ -10,9 +10,6 @@ keywords: grav, plugin, ICS, Icalendar
 bugs: https://github.com/wernerjoss/grav-plugin-icalendar/issues
 docs: https://github.com/wernerjoss/grav-plugin-icalendar/blob/master/README.md
 license: MIT
-
-# dependencies:
-#   - { name: om/icalparser }
 
 form:
   validation: strict
