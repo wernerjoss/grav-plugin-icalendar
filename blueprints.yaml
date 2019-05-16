@@ -1,7 +1,7 @@
 name: Icalendar
 version: 0.2.2
 description: Reads ICS Files and shows Events from it
-icon: plug
+icon: calendar
 author:
   name: Werner Joss
   email: werner@hoernerfranzracing.de
