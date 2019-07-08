@@ -1,5 +1,5 @@
 name: Icalendar
-version: 0.2.2
+version: 0.2.3
 description: Reads ICS Files and shows Events from it
 icon: calendar
 author:
@@ -38,3 +38,7 @@ form:
         destination: 'user/data/calendars'
         accept:
             - .ics
+    dateformat:
+        type: text
+        label: Date Format
+        default: d.m.Y
