@@ -42,6 +42,7 @@ Here is the default configuration and an explanation of available options:
 enabled: true
 icsfile: example.ics    # your ics Calendar File (without Path, must be found in user/data/calendars)
 numevents: 2    # max, No. of Events to include in List
+dateformat: d.m.Y   # default Date Format
 
 ```
 

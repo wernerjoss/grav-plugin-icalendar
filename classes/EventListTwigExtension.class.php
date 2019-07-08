@@ -6,13 +6,17 @@ use RocketTheme\Toolbox\File\File;
 
 class EventListTwigExtension extends \Twig_Extension
 {
-	private $numevents = 1;
-	public function setNumEvents($numevents) { 
+    private $numevents = 1;
+    public function setNumEvents($numevents) { 
         $this->numevents = $numevents; 
     }
     private $ICSfile = NULL;
     public function setICSfile($icsfile) { 
         $this->ICSfile = $icsfile; 
+    }
+    private $dateformat = 'd.m.Y';
+	public function setDateFormat($dateformat) { 
+        $this->dateformat = $dateformat; 
     }
     public function getName()
     {
@@ -38,9 +42,9 @@ class EventListTwigExtension extends \Twig_Extension
 			// DONE: include URL !
 			if (((int) $r['DTSTART']->format('U')) > $today)	{
 				if (isset($r['URL']))
-					$eventList .= sprintf('	<li>%s - <a href="%s" target="_blank">%s</a></li>' . PHP_EOL, $r['DTSTART']->format('d.m.Y'), $r['URL'],$r['SUMMARY']);
+					$eventList .= sprintf('	<li>%s - <a href="%s" target="_blank">%s</a></li>' . PHP_EOL, $r['DTSTART']->format($this->dateformat), $r['URL'],$r['SUMMARY']);
 				else
-					$eventList .= sprintf('	<li>%s - %s</li>' . PHP_EOL, $r['DTSTART']->format('d.m.Y'), $r['SUMMARY']);
+					$eventList .= sprintf('	<li>%s - %s</li>' . PHP_EOL, $r['DTSTART']->format($this->dateformat), $r['SUMMARY']);
 				$i++;
 			}
 			if ($i >= $this->numevents)	{ break; }	

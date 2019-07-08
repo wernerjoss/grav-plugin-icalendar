@@ -31,6 +31,9 @@ class IcalendarPlugin extends Plugin
         require_once(__DIR__ . '/classes/EventListTwigExtension.class.php');
         // see https://discourse.getgrav.org/t/set-variable-in-twig-extension-class/9193/3
         $ext = new EventListTwigExtension();
+        // add optional dateformat, default 'd.m.Y' 08.07.19
+        $dateformat = $this->config->get('plugins.icalendar.dateformat','d.m.Y');
+        $ext->setDateFormat($dateformat);	
         // DONE: limit (numevents) from config (yaml)
         $numevents = $this->config->get('plugins.icalendar.numevents');
         $ext->setNumEvents($numevents);	
