@@ -1,3 +1,9 @@
+# v0.2.4
+##  01/10/2020
+
+1. [](#new)
+    * Show each calendar event in Grav system timezone. - pull request #4 from atomsmith
+
 # v0.2.3
 ##  07/08/2019
 
