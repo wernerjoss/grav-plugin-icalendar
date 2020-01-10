@@ -1,5 +1,6 @@
 <?php
 namespace Grav\Plugin;
+use DateTimeZone;
 use Grav\Common\Plugin;
 use RocketTheme\Toolbox\File\File;
 
@@ -38,9 +39,11 @@ class EventListTwigExtension extends \Twig_Extension
 		$i = 0;
 		// DONE: start list Today (not oldest Event)
 		$today = (int) date('U');	// seconds since 01.01.1970
+        $timeZoneObj = new DateTimeZone(date_default_timezone_get());	// Get Grav system timezone
 		foreach ($cal->getSortedEvents() as $r) {
 			// DONE: include URL !
 			if (((int) $r['DTSTART']->format('U')) > $today)	{
+                $r['DTSTART']->setTimeZone($timeZoneObj);
 				if (isset($r['URL']))
 					$eventList .= sprintf('	<li>%s - <a href="%s" target="_blank">%s</a></li>' . PHP_EOL, $r['DTSTART']->format($this->dateformat), $r['URL'],$r['SUMMARY']);
 				else
