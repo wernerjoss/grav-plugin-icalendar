@@ -4,7 +4,7 @@ description: Reads ICS Files and shows Events from it
 icon: calendar
 author:
   name: Werner Joss
-  email: werner@hoernerfranzracing.de
+  email: wernerjoss@users.noreply.github.com
 homepage: https://github.com/wernerjoss/grav-plugin-icalendar
 keywords: grav, plugin, ICS, Icalendar
 bugs: https://github.com/wernerjoss/grav-plugin-icalendar/issues
