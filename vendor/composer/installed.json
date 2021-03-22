@@ -1,32 +1,30 @@
 [
     {
-        "name": "nette/tester",
-        "version": "v2.0.1",
-        "version_normalized": "2.0.1.0",
+        "name": "om/icalparser",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/nette/tester.git",
-            "reference": "93f70b53f7b87b44334d98219302939eda2a423b"
+            "url": "https://github.com/OzzyCzech/icalparser.git",
+            "reference": "e180dea8447c9e78f92306f892f809d5f5ad2948"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nette/tester/zipball/93f70b53f7b87b44334d98219302939eda2a423b",
-            "reference": "93f70b53f7b87b44334d98219302939eda2a423b",
+            "url": "https://api.github.com/repos/OzzyCzech/icalparser/zipball/e180dea8447c9e78f92306f892f809d5f5ad2948",
+            "reference": "e180dea8447c9e78f92306f892f809d5f5ad2948",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.6.0"
+            "php": ">=7.2.0"
         },
-        "time": "2018-02-07 12:55:20",
-        "bin": [
-            "src/tester"
-        ],
+        "require-dev": {
+            "nette/tester": "*"
+        },
+        "suggest": {
+            "ext-dom": "for timezone tool"
+        },
+        "time": "2020-09-21T09:20:40+00:00",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0-dev"
-            }
-        },
         "installation-source": "dist",
         "autoload": {
             "classmap": [
@@ -35,32 +33,19 @@
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "BSD-3-Clause",
-            "GPL-2.0",
-            "GPL-3.0"
+            "BSD-3-Clause"
         ],
         "authors": [
             {
-                "name": "David Grudl",
-                "homepage": "https://davidgrudl.com"
-            },
-            {
-                "name": "Nette Community",
-                "homepage": "https://nette.org/contributors"
+                "name": "Roman Ožana",
+                "email": "roman@omdesign.cz"
             }
         ],
-        "description": "Nette Tester: enjoyable unit testing in PHP with code coverage reporter. ????",
-        "homepage": "https://tester.nette.org",
+        "description": "Simple ical parser",
         "keywords": [
-            "Xdebug",
-            "assertions",
-            "clover",
-            "code coverage",
-            "nette",
-            "phpdbg",
-            "phpunit",
-            "testing",
-            "unit"
+            "calendar",
+            "ical",
+            "parser"
         ]
     }
 ]

@@ -1,32 +1,24 @@
 {
-	"name": "om/icalparser",
-	"license": "BSD-3-Clause",
-	"description": "Simple ical parser",
-	"keywords": [
-		"ical",
-		"calendar",
-		"parser"
-	],
-	"authors": [
-		{
-			"name": "Roman Ožana",
-			"email": "roman@omdesign.cz"
-		}
-	],
-	"require": {
-		"php": ">=7.1.0"
-	},
-	"autoload": {
-		"classmap": [
-			"src/"
-		]
-	},
-	"require-dev": {
-		"nette/tester": "v2.3.*"
-	},
-	"scripts": {
-		"tests": [
-			"./vendor/bin/tester tests -s -p php"
-		]
-	}
+    "name": "wernerjoss/grav-plugin-icalendar",
+    "type": "grav-plugin",
+    "description": "create ical calendar file(s) from caldav calendar(s)",
+    "keywords": ["Grav Plugin", "ICS", "Calendar"],
+    "homepage": "https://github.com/wernerjoss/grav-plugin-icalendar",
+    "license": "MIT",
+    "vendor": "wernerjoss",
+    "authors": [{
+        "name": "Werner Joss",
+        "email": "wernerjoss@users.noreply.github.com",
+        "homepage": "https://hoernerfranzracing.de",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=7.3",
+        "om/icalparser": "^1.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
+    }
 }
