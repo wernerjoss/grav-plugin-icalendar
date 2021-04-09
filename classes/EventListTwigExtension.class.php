@@ -33,7 +33,8 @@ class EventListTwigExtension extends \Twig_Extension
 		require_once __DIR__ . '/../vendor/autoload.php';
 		$cal = new \om\IcalParser();
 		if (! file_exists($this->ICSfile))	return NULL;
-		$results = $cal->parseFile($this->ICSfile	);
+		$results = $cal->parseFile($this->ICSfile);	// $results is never used !
+		//	dump($results);
 		$eventList = '';
 		$i = 0;
 		// DONE: start list Today (not oldest Event)
