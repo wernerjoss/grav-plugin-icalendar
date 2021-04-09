@@ -1,5 +1,5 @@
 name: Icalendar
-version: 0.2.4
+version: 0.2.5
 description: Reads ICS Files and shows Events from it
 icon: calendar
 author:

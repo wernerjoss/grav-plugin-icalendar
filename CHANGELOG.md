@@ -1,8 +1,8 @@
 # v0.2.5
-##  03/22/2021
+##  04/10/2021
 
 1. [](#new)
-    * include om/icalparser via composer
+    * include om/icalparser via composer, remove unused code
 
 # v0.2.4
 ##  01/10/2020
