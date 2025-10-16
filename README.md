@@ -1,5 +1,9 @@
 # Icalendar Plugin
 
+## please note that this Plugin is no longer supported an will be archived soon, as I have given up on Grav development since my switch to [Hugo](https://gohugo.io) in 2024.
+
+## please note that this Plugin is no longer supported an will be archived soon, as I have given up on Grav development since my switch to [Hugo](https://gohugo.io) in 2024.
+
 The **Icalendar** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It reads an ICS Calendar File and shows an Events List from that Calendar on your Page(s)
 
 ## Installation
